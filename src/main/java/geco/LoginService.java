@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class LoginService {
 
-    private ArrayList<String> loginsExistants;
+    private static ArrayList<String> loginsExistants;
 
     /**
      * Construit un login service a partir de la liste des logins existants
