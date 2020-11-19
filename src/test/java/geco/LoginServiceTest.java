@@ -7,6 +7,7 @@ class LoginServiceTest {
 
     @org.testng.annotations.Test
     public void testloginExists() {
+
         String[] newL = {"login","login2"};
         LoginService loginsExistants = new LoginService(newL);
         assertFalse(loginsExistants.loginExists("login3"), "The ArrayList must not contains \"login3\"");
@@ -14,6 +15,7 @@ class LoginServiceTest {
 
     @org.testng.annotations.Test
     public void testaddLogin() {
+
         String[] newL = {"login","login2"};
         LoginService loginsExistants = new LoginService(newL);
         String newLogin = "login3";
@@ -22,6 +24,7 @@ class LoginServiceTest {
     }
 
     @org.testng.annotations.Test
+
     public void testfindAllLoginsStartingWith() {
         String[] newL = {"login","login2"};
         LoginService loginsExistants = new LoginService(newL);
@@ -29,6 +32,7 @@ class LoginServiceTest {
     }
 
     @org.testng.annotations.Test
+
     public void testfindAllLogins() {
         String[] newL = {"login","login2"};
         LoginService loginsExistants = new LoginService(newL);
@@ -37,6 +41,7 @@ class LoginServiceTest {
     }
 
     public void main(String[] args){
+
         testloginExists();
         testaddLogin();
         testfindAllLoginsStartingWith();
